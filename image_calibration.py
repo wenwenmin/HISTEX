@@ -27,8 +27,8 @@ def main(prefix):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Process images and locs with a given prefix.")
-    parser.add_argument('prefix', type=str, help="The prefix for input/output files")
+    parser.add_argument('--directory', type=str, help="The prefix for input/output files")
 
     args = parser.parse_args()
 
-    main(args.prefix)
+    main(args.directory)
