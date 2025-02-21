@@ -11,6 +11,7 @@ conda create -n HISTEX python==3.11.5
 conda activate HISTEX
 pip install -r requirements.txt
 ```
+
 ## Data
 The Xenium human breast cancer datasets: [https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast).
 
@@ -19,3 +20,10 @@ The Visium HD human breast cancer: [https://www.10xgenomics.com/datasets/visium-
 The Visium HD mouse brain: [https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-mouse-brain-fresh-frozen](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-mouse-brain-fresh-frozen).
 
 The HER2-positive breast cancer datasets: [https://github.com/almaan/her2st](https://github.com/almaan/her2st).
+
+## Training and Inferring
+Fisrt, high-density spot-based ST data and histological features are acquired:
+```shell
+python get_HR.py --directory dataset\\
+python Histology_Extractor.py --directory dataset\\ --login ***
+```
