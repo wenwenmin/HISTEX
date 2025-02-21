@@ -211,8 +211,8 @@ def main(prefix):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Gene Expression Data Enhancement.")
-    parser.add_argument('prefix', type=str, default='')
+    parser.add_argument('--directory', type=str, default='')
 
     args = parser.parse_args()
 
-    main(args.prefix)
+    main(args.directory)
