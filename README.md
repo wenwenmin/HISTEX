@@ -5,7 +5,7 @@ The groundbreaking development of spatial transcriptomics (ST) enables researche
 ![Overview.png](Overview.png)
 
 ## Requirements
-Before running HISTEX, you need to create a conda environment and install the required packages:
+All experiments were conducted on an NVIDIA RTX 3090 GPU. Before running HISTEX, you need to create a conda environment and install the required packages:
 ```shell
 conda create -n HISTEX python==3.11.5
 conda activate HISTEX
