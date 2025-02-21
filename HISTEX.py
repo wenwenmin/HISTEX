@@ -288,4 +288,4 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    main(args.prefix, epoch=args.epochs, n_states=args.n_states, enhance=True)
+    main(args.directory, epoch=args.epochs, n_states=args.n_states, enhance=True)
