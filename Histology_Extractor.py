@@ -94,9 +94,9 @@ def main(prefix, login_value):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Extracting histological features based on prefix and login_value.")
-    parser.add_argument('prefix', type=str, help="The prefix for input/output files", default='')
+    parser.add_argument('--directory', type=str, help="The prefix for input/output files", default='')
     parser.add_argument('--login', type=str, help="The login_value for UNI model", default='')
 
     args = parser.parse_args()
 
-    main(args.prefix, args.login)
+    main(args.directory, args.login)
