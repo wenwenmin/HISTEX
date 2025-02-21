@@ -33,3 +33,4 @@ python Histology_Extractor.py --directory dataset\\ --login ***
 python masking_non_tissue.py --directory dataset\\
 python HISTEX.py --directory dataset\\ --epochs 500 --n-states 5
 ```
+`--directory` represents the directory of your dataset, and `--login` represents the key of the UNI model you own.
