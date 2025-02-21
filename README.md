@@ -21,6 +21,9 @@ The Visium HD mouse brain: [https://www.10xgenomics.com/datasets/visium-hd-cytas
 
 The HER2-positive breast cancer datasets: [https://github.com/almaan/her2st](https://github.com/almaan/her2st).
 
+## Pre-trained general-purpose foundation mode
+Given the outstanding performance of large pre-trained general-purpose foundation models in clinical tasks, we use UNI as the backbone feature extractor. Before using HISTEX, you need to apply to UNI for permission to access the model weights: [https://huggingface.co/mahmoodlab/UNI](https://huggingface.co/mahmoodlab/UNI).
+
 ## Training and Inferring
 - First, histology image and location information are normalized by running [`image_calibration.py`](image_calibration.py).
 - Second, high-density spot-based ST data and histological features are acquired by running [`get_HR.py`](get_HR.py) and [`Histology_Extractor.py`](Histology_Extractor.py).
