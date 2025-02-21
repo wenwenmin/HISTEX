@@ -7,6 +7,7 @@ import pandas as pd
 def main(prefix):
     with open(prefix + 'pixel-size-raw.txt', 'r') as file:
         raw_pix_size = float([line.rstrip() for line in file][0])
+
     scale_pix_size = 0.5
     scale = raw_pix_size / scale_pix_size
 
