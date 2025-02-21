@@ -282,7 +282,7 @@ def main(prefix, epoch=500, device='cuda', n_states=5, load_saved=False, enhance
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('prefix', type=str, default='')
+    parser.add_argument('--directory', type=str, default='')
     parser.add_argument('--epochs', type=int, default=500)
     parser.add_argument('--n-states', type=int, default=5)
 
