@@ -11,3 +11,8 @@ conda create -n HISTEX python==3.11.5
 conda activate HISTEX
 pip install -r requirements.txt
 ```
+## Data
+The Xenium human breast cancer datasets with three sections can be accessed at \url:[https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast).
+The Visium HD human breast cancer is available at \url:[https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-breast-cancer-fresh-frozen](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-breast-cancer-fresh-frozen).
+The Visium HD mouse brain can be downloaded from the Genomics website \url:[https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-mouse-brain-fresh-frozen](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-mouse-brain-fresh-frozen)
+The HER2-positive breast cancer datasets can be found at \url[https://github.com/almaan/her2st](https://github.com/almaan/her2st).
