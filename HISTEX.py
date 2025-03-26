@@ -124,7 +124,7 @@ def predict_single_out(model, z, x, indices, names, y_range):
     z = torch.tensor(z, device=model.device).squeeze(0).to(torch.float32)  # 32 49 1000
     x = torch.tensor(x, device=model.device)
     x = x.reshape(x.shape[0], -1, x.shape[-1]).to(torch.float32)
-    #z = torch.cat((z, x), dim=2)
+    z = torch.cat((z, x), dim=2)
     y = model.get_gene(z, indices=indices)
     y = y.cpu().detach().numpy()
 
