@@ -102,14 +102,14 @@ class SpaPSC(pl.LightningModule):
         self.num_embeddings = num_embeddings
 
         self.MCA1 = CrossAttentionModel(embed_dim=num_embeddings, his_dim=num_features, ge_dim=num_genes)
-        self.l1 = Linear(num_embeddings, num_embeddings, bias=bias)
+        self.l1 = Linear(num_embeddings, num_embeddings, bias=bias, func=False)
         self.MCA2 = CrossAttentionModel(embed_dim=num_embeddings, his_dim=num_embeddings, ge_dim=num_genes)
-        self.l2 = Linear(num_embeddings, num_embeddings, bias=bias)
+        self.l2 = Linear(num_embeddings, num_embeddings, bias=bias, func=False)
 
-        self.output_module = nn.Sequential(Linear(num_embeddings, 1024, bias=bias),  # 注意调整alpha和beta
-                                           Linear(1024, 512, bias=bias),
-                                           Linear(512, 512, bias=bias),
-                                           Linear(512, 512, bias=bias))
+        self.output_module = nn.Sequential(Linear(num_embeddings + num_features, 1024, bias=bias, func=False),
+                                           Linear(1024, 512, bias=bias, func=False),
+                                           Linear(512, 512, bias=bias, func=False),
+                                           Linear(512, 512, bias=bias, func=False))
         self.fal_out = Linear(512, num_genes, bias=bias)
         self.save_hyperparameters()
 
