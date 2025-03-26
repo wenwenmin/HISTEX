@@ -130,6 +130,7 @@ class SpaPSC(pl.LightningModule):
         his_fea = x['his'].to(torch.float32)
         gene_fea = x['gene']
         x = self.get_Multi_Fea(his_fea, gene_fea)
+        x = torch.cat((x, his_fea), dim=2)
         x = self.get_gene(x, indices)
         return x
 
