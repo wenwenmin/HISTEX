@@ -39,4 +39,4 @@ python HISTEX.py --directory dataset\\ --epochs 500 --n-states 5
 `--directory` represents the directory of your dataset, and `--login` represents the key of the UNI model you own.
 
 ## Contact details
-If you have any questions, please contact email@anonymized.com (The current paper is undergoing double-blind review at MICCAI 2025).
+If you have any questions, please contact xueshuailin@163.com.
