@@ -1,5 +1,5 @@
-# HISTEX
-- This repository contains the implementation for our work "Inferring Super-Resolved Gene Expression by Integrating Histology Images and Spatial Transcriptomics with HISTEX", early accepted by **MICCAI 2025**
+# HISTEX: Inferring Super-Resolved Gene Expression by Integrating Histology Images and Spatial Transcriptomics with HISTEX
+
 ## Introduction
 The groundbreaking development of spatial transcriptomics (ST) enables researchers to map gene expression across tissues with spatial precision. However, current next-generation sequencing methods, which theoretically cover the entire transcriptome, face limitations in resolving spatial gene expression at high resolution. The recently introduced Visium HD technology offers a balance between sequencing depth and spatial resolution, but its complex sample preparation and high cost limit its widespread adoption. To address these challenges, we introduce HISTEX, a multimodal fusion approach that leverages a bidirectional cross-attention mechanism and a general-purpose foundation model. HISTEX integrates spot-based ST data with histology images to predict super-resolution (SR) spatial gene expression. Experimental evaluations demonstrate that HISTEX outperforms state-of-the-art methods in accurately predicting SR gene expression across diverse datasets from multiple platforms. Moreover, experimental validation underscores HISTEX’s potential to generate new biological insights. It enhances spatial patterns, enriches biologically significant pathways, and facilitates the SR annotation of tissue structures. These findings highlight HISTEX as a powerful tool for advancing ST research.
 
@@ -41,3 +41,6 @@ python Step4_HISTEX_demo.py --directory dataset\\ --epochs 500 --n-states 5
 
 ## Contact details
 If you have any questions, please contact xueshuailin@163.com.
+
+
+- This repository contains the implementation for our work "Inferring Super-Resolved Gene Expression by Integrating Histology Images and Spatial Transcriptomics with HISTEX", early accepted by **MICCAI 2025**
