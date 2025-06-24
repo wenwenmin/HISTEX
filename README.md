@@ -42,5 +42,4 @@ python Step4_HISTEX_demo.py --directory dataset\\ --epochs 500 --n-states 5
 ## Contact details
 If you have any questions, please contact xueshuailin@163.com.
 
-
-- This repository contains the implementation for our work "Inferring Super-Resolved Gene Expression by Integrating Histology Images and Spatial Transcriptomics with HISTEX", early accepted by **MICCAI 2025**
+## This repository contains the implementation for our work "Inferring Super-Resolved Gene Expression by Integrating Histology Images and Spatial Transcriptomics with HISTEX", early accepted by **MICCAI 2025**
