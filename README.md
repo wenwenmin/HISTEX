@@ -22,6 +22,14 @@ The Visium HD mouse brain: [https://www.10xgenomics.com/datasets/visium-hd-cytas
 
 The HER2-positive breast cancer datasets: [https://github.com/almaan/her2st](https://github.com/almaan/her2st).
 
+### Data Preprocessing
+
+This project provides end-to-end preprocessing pipelines for both Visium HD and Xenium spatial transcriptomics data.  
+All preprocessing scripts are located in the `data/` directory:
+
+- **`Preprocessing_Visium_HD.py`** – Complete preprocessing workflow for Visium HD data.  
+- **`Preprocessing_Xenium.py`** – End-to-end preprocessing pipeline tailored for Xenium data.
+
 ## Pre-trained general-purpose foundation mode
 Given the outstanding performance of large pre-trained general-purpose foundation models in clinical tasks, we use UNI as the backbone feature extractor. Before using HISTEX, you need to apply to UNI for permission to access the model weights: [https://huggingface.co/mahmoodlab/UNI](https://huggingface.co/mahmoodlab/UNI).
 
