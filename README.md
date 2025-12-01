@@ -24,8 +24,7 @@ The HER2-positive breast cancer datasets: [https://github.com/almaan/her2st](htt
 
 ### Data Preprocessing
 
-This project provides end-to-end preprocessing pipelines for both Visium HD and Xenium spatial transcriptomics data.  
-All preprocessing scripts are located in the `data/` directory:
+This project provides end-to-end preprocessing pipelines for both Visium HD and Xenium spatial transcriptomics data:
 
 - **`Preprocessing_Visium_HD.py`** – Complete preprocessing workflow for Visium HD data.  
 - **`Preprocessing_Xenium.py`** – End-to-end preprocessing pipeline tailored for Xenium data.
